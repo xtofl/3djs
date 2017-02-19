@@ -3,7 +3,21 @@
 		<title>3d</title>
 		<script src="three.js"></script>
 		<script src="3d.js"></script>
+		<style>
+			.controls {}
+			.controls .button {
+				width: 20px;
+				height: 20px;
+				background: green;
+			}
+		</style>
 	</head>
 	<body onload="start();">
+		<div id="controls">
+			<span class=".button" onclick="camera.left()">left</span>
+			<span class=".button" onclick="camera.right()">right</span>
+			<span class=".button" onclick="camera.forward()">forward</span>
+			<span class=".button" onclick="camera.backward()">backward</span>
+		</div>
 	</body>
 </html>
